@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dbConnect from "../lib/dbConnect";
 import Pet from "../models/Pet";
+import Hours from "../components/Hours"; 
 
 // TODO: Import Hours component
 
@@ -10,6 +11,17 @@ const Index = ({ pets }) => {
     <>
 
       {/* TODO: Display Hours component */}
+      <Hours /> {/* Muestra el componente Hours */}
+      
+
+      <div className="dog-image" style={{ textAlign: "center", margin: "20px 0" }}>
+        <h2 style={{ marginBottom: "10px" }}>Perro de Noel Muñoz Ramírez</h2> 
+        <img 
+          src="https://rukminim2.flixcart.com/image/850/1000/kzsqykw0/poster/f/v/f/small-cute-dog-poster-multicolour-photo-paper-print-pomeranian-original-imagbqa4gddkyggd.jpeg?q=90&crop=false" 
+          alt="Cute Dog" 
+          style={{ width: "300px", height: "auto", borderRadius: "10px" }} 
+        />
+      </div>
 
       {/* Create a card for each pet */}
       {pets.map((pet) => (
