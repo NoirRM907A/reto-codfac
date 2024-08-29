@@ -11,7 +11,7 @@ const Index = ({ pets }) => {
     <>
 
       {/* TODO: Display Hours component */}
-      <Hours /> {/* Muestra el componente Hours */}
+      <Hours /> {/* Muestra el componente Hours  */}
       
 
       <div className="dog-image" style={{ textAlign: "center", margin: "20px 0" }}>
